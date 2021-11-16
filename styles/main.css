@@ -53,12 +53,13 @@ table{
     margin: 10px 10px 10px;
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
-    white-space: nowrap;
+    
     background-color: white;
+    
 }
 
 th {
@@ -66,21 +67,27 @@ th {
     padding: 8px 25px;
     color: white;
     background: darkblue;
-    width: fit-content;
+}
+
+td {
+    text-align: left;
+    padding: 8px 25px;
+    max-width: 600px;
+}
+
+.odd {
+    color: black;
+    background: rgb(216, 213, 213);
 }
 
 #blog {
     column-width: 500px;
 }
 
-td {
-    padding: 8px 25px;
-    font-size: 18px;
-    width: fit-content;
+
+.question {
+    font-weight: bold;
 }
 
 
-.odd {
-    color: black;
-    background: rgb(216, 213, 213);
-}
+
