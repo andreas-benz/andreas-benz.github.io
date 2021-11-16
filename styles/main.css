@@ -1,0 +1,75 @@
+body {
+    background-color: azure;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+header {
+    background-color: deepskyblue;
+    height: 120px;
+    display: flex;
+    min-width: 100%;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 20%;
+    margin: 10px 10px 10px 10px;
+    position: fixed;
+    right: 10px;
+}
+
+#eda {
+    right: 120px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: auto;
+    margin-right: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+h2, p {
+    padding-left: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+table{
+    margin: 10px 10px 10px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+table {
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    white-space: nowrap;
+    background-color: white;
+}
+
+th {
+    text-align: left;
+    padding: 8px 25px;
+    color: white;
+    background: darkblue;
+    width: fit-content;
+}
+
+td {
+    padding: 8px 25px;
+    font-size: 18px;
+    width: fit-content;
+}
+
+
+.odd {
+    color: black;
+    background: rgb(216, 213, 213);
+}
