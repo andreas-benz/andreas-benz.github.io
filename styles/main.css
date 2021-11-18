@@ -112,7 +112,7 @@ nav {
 
 footer {
     background-color: deepskyblue;
-    height: 40px;
+    height: 60px;
     width: 100%;
     text-align: center;
 }
@@ -120,6 +120,9 @@ footer {
 .footertext {
     padding: 8px 0px;
     margin: 0px;
+    display: inline-block;
+    line-height: 24px;
+    width: 150px;
 }
 
 .code {
@@ -127,6 +130,6 @@ footer {
     background-color: beige;
 }
 
-img {
-    margin-left: 10px;
+.socialmedia {
+    margin-left: 20px;
 }
