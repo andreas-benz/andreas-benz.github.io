@@ -1,52 +1,60 @@
-body {
-    background-color: azure;
+html body {
+    background-color: lightblue;
     margin: 0 auto;
-    box-sizing: border-box;
     font-family: 'Lobster', cursive;
+    height: 100%;
 }
 
-header {
+.header {
     background-color: deepskyblue;
     height: 120px;
-    display: flex;
-    min-width: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
+
+.header-heading {
+    font-size: 40px;
+    margin: 30px 50px 30px 10px;
+    padding-top: 4px;
+    float: left;
+    width: max-content;
+}
+
+.imageContainer {
+    position: absolute;
+    right: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .imageContainer {
+      display: none;
+    }
+  }
 
 .logo {
     width: 100px;
     border-radius: 20%;
     margin: 10px 10px 10px 10px;
-    position: fixed;
-    right: 10px;
 }
 
-#eda {
-    right: 120px;
+main {
+    max-width: 800px;
+    position: relative;
+    top: 120px;
+    margin: 0px auto;
+    background-color: white;
+    min-height: 100%;
 }
 
 .topSection {
-    float: left;
-}
-
-.blogTopSection {
-    height: 450px;
-    width: 100%;
-}
-
-h1 {
-    font-size: 40px;
-    margin: auto;
-    margin-right: 50px;
-    margin-left: 10px;
-    vertical-align: middle;
+    padding: 20px;
 }
 
 h2, p {
     padding-left: 10px;
-    margin-top: 24px;
     margin-bottom: 24px;
 }
-
 
 table{
     margin: 10px 10px 10px;
@@ -79,14 +87,23 @@ td {
     background: rgb(216, 213, 213);
 }
 
-#blog {
-    column-width: 500px;
+/* blog specific formatting*/
+
+.blog {
+    padding: 20px;
 }
 
+h1 {
+    padding-left: 10px;
+    margin-bottom: 24px;
+    font-size: 32px;
+}
 
 .question {
     font-weight: bold;
 }
 
-
-
+nav {
+    padding-left: 10px;
+    margin-bottom: 24px;
+}
