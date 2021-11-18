@@ -1,4 +1,4 @@
-html body {
+body {
     background-color: lightblue;
     margin: 0 auto;
     font-family: 'Lobster', cursive;
@@ -8,22 +8,20 @@ html body {
 .header {
     background-color: deepskyblue;
     height: 120px;
-    position: fixed;
-    top: 0px;
     width: 100%;
-    z-index: 1;
 }
 
 .header-heading {
     font-size: 40px;
     margin: 30px 50px 30px 10px;
     padding-top: 4px;
-    float: left;
     width: max-content;
+    display: inline-block;
 }
 
 .imageContainer {
     position: absolute;
+    top: 0px;
     right: 0px;
 }
 
@@ -40,22 +38,19 @@ html body {
 }
 
 main {
-    max-width: 800px;
-    position: relative;
-    top: 120px;
+    max-width: 850px;
     margin: 0px auto;
     background-color: white;
-    height: 100%;
 }
 
 .topSection {
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     height: 100%;
 }
 
 h2, p {
     padding-left: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 table{
@@ -97,7 +92,7 @@ td {
 
 h1 {
     padding-left: 10px;
-    margin-bottom: 24px;
+    margin: 8px 0px;
     font-size: 32px;
 }
 
@@ -107,13 +102,21 @@ h1 {
 
 nav {
     padding-left: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
+}
+
+.topSectionBlog {
+    padding: 20px 20px 0px 20px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0px;
     background-color: deepskyblue;
+    height: 40px;
     width: 100%;
     text-align: center;
+}
+
+.footertext {
+    padding: 8px 0px;
+    margin: 0px;
 }
