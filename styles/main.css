@@ -1,7 +1,7 @@
 body {
     background-color: lightblue;
     margin: 0 auto;
-    font-family: Arial, Verdana, Helvetica;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
     height: 100%;
 }
 
@@ -17,7 +17,7 @@ body {
     padding-top: 4px;
     width: max-content;
     display: inline-block;
-    font-family: Monotype Corsiva;
+    font-family: "Monotype Corsiva", cursive;
 }
 
 .imageContainer {
