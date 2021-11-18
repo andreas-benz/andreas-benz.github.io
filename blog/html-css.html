@@ -26,11 +26,37 @@
   
       <section class="blog">
         <h1>What does it mean to display inline vs inline blocks?</h1>
-        <h2>Topics</h2>
-          <div class="questionBlock">
-            <p class="question">Question</p>
-            <p class="answer">Answer</p>
-          </div>
+          <p>CSS treats each HTML element as if it is in its own box.  This box will either be a <strong>block-level box</strong> or an <strong>inline box</strong>.
+          <br>
+          <h2>Block elements:</h2>
+            <p>In normal flow (default if not specified otherwise) each element sits on top of the next one. Each element starts on a new line even if previeous elements did not take up the full width of the browser window.</p>
+            <img src="../assets/CSS_block-level-element-flow.JPG" alt="display of block-level elemts">
+            <p>Examples include: <span class="code">&lth1&gt</span> <span class="code">&ltp&gt</span> <span class="code">&ltul&gt</span> <span class="code">&ltli&gt</span></p>
+            <h2>Inline elements:</h2>
+            <p>Inline boxes flow between surrounding text.</p>
+            <img src="../assets/CSS_inline-level-element-flow.JPG" alt="display of inline elemts">
+            <p>Examples include: <span class="code">&ltimg&gt</span> </p>
+          <h2>The display property</h2>
+            <p>The display property allows to turn an inline elent into a block-level element or vice versa.
+            <br>
+            <p>The values  this property can take are:</p>
+            <ul>
+              <li><span class="code">Inline:</span> This causes a block-level element to act like an inline element.</li>
+              <li><span class="code">Block:</span> This causes an inline element to act like a block-level element.</li>
+              <li><span class="code">Inline-block: </span>  This causes a block-level element to flow like an inline element, while retaining other features of a block-level element.</li>
+              <li><span class="code">None:</span> This hides an element from the page. In this case, the elemnt acts as though it is not on the page at all. </li>
+            </ul>
+            <br>
+            <h2>Using <span class="code">display: inline</span> to create a navigation structure</h2>
+            <p>In the following example you can see a list. Each item in the list is usually treated as a block-level element, but the rule for the <span class="code">&ltli&gt</span> elements indicates that they should be treated as inline elemts, which means they will sit alongside each other rather than appearing on new lines. <br> This technique is often used to create navigation for a site.
+            <br>
+            <p><strong>List in default block display:</strong></p>
+            <img src="../assets/List-block.png" alt="list displayed as block">
+            <p><strong>List in inline display:</strong></p>
+            <img src="../assets/List-inline.png" alt="list displayed inline">
+            <p><strong>List in inline display with one element hidden:</strong></p>
+            <img src="../assets/List-inline-hidden.png" alt="list with hidden element">
+            </p>
       </section>
 
       
