@@ -1,7 +1,7 @@
 body {
     background-color: lightblue;
     margin: 0 auto;
-    font-family: 'Lobster', cursive;
+    font-family: Arial, Verdana, Helvetica;
     height: 100%;
 }
 
@@ -12,11 +12,12 @@ body {
 }
 
 .header-heading {
-    font-size: 40px;
+    font-size: 48px;
     margin: 30px 50px 30px 10px;
     padding-top: 4px;
     width: max-content;
     display: inline-block;
+    font-family: Monotype Corsiva;
 }
 
 .imageContainer {
