@@ -2,7 +2,7 @@ body {
     background-color: lightblue;
     margin: 0 auto;
     font-family: Arial, Verdana, Helvetica, sans-serif;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .header {
@@ -42,11 +42,55 @@ main {
     max-width: 850px;
     margin: 0px auto;
     background-color: white;
+    padding: 20px;
 }
 
 .topSection {
-    padding: 20px 20px 40px 20px;
-    height: 100%;
+    padding: 20px 20px 20px 20px;
+    background-color: whitesmoke;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 25px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.topSection2 {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: whitesmoke;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 25px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.topSection3 {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: whitesmoke;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 25px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );    
+}
+
+.left {
+    display: inline-block;
+    width: 42.5%;
+}
+
+.right {
+    width: 42.5%;
+    display: inline-block;
+    text-align: right;
+}
+
+.homepage {
+    padding: 0px;
+    margin: 0px;
 }
 
 h2, p {
@@ -55,14 +99,14 @@ h2, p {
 }
 
 table{
-    margin: 10px 10px 10px;
+    
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-    border-radius: 5px;
     font-size: 16px;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
     background-color: white;
+    display: inline-block;
     
 }
 
@@ -78,6 +122,10 @@ td {
     padding: 8px 25px;
     max-width: 600px;
     min-width: 70px;
+}
+
+tr:hover {
+    background-color: lightblue;
 }
 
 .odd {
@@ -101,11 +149,6 @@ h1 {
     font-weight: bold;
 }
 
-nav {
-    padding-left: 0px;
-    margin-bottom: 0px;
-}
-
 .topSectionBlog {
     padding: 20px 20px 0px 20px;
 }
@@ -115,6 +158,8 @@ footer {
     height: 60px;
     width: 100%;
     text-align: center;
+    position: fixed;
+    bottom: 0px;
 }
 
 .footertext {
@@ -134,6 +179,7 @@ footer {
     margin-left: 20px;
 }
 
+/* nav bar specific formatting*/
 /* Navbar container */
 .navbar {
     overflow: hidden;
