@@ -22,6 +22,7 @@
             </button>
             <div class="dropdown-content">
             <a href="html-css.html">CSS: display inline vs. block</a>
+            <a href="javascript-dom.html">Javascript and the DOM</a>
             </div>
         </div>
         <div class="dropdown">
@@ -41,7 +42,7 @@
     <main>
  
       <section class="blog">
-        <h1>Javascript and the DOMinatrix</h1>
+        <h1>Javascript and the DOM</h1>
           <div class="questionBlock">
             <p class="question">What is the difference between HTML, CSS and JavaScript</p>
             <p class="answer">HTML provides the structure of a website. If you were to build a house, HTML were all the bricks and other elements such as doors, windows that make up the final house. CSS provides the style of a website. CSS defines width, height, position, colors and many more things that make up how the house appears. Javascript brings in interactivity. It lets you open doors and windows, can watch out for visitors and perform certain tasks if they arrive such as turn on the barbecue.</p>
@@ -50,29 +51,91 @@
           <div class="questionBlock">
             <p class="question">Control Flow and Loops</p>
             <p class="answer">
-                The control flow is the order in which the computer executes statements in a script.
-                Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
-                Imagine you cook a meal and you follow a recipe. The receipe will tell you "boil 4 eggs". So before you continue your flow you will loop through this task until all 4 eggs are boiled (of course you are much smarter than a stupid script that follows commands and you boil them in the same pan). If you expect another guest you will adjust all measurements by 1 another example (IF condition) where the normal flow can be broken. Hopefully you will not be interrupted too much and you can just follow through the recipe from top left to right bottom.
+                The control flow is the order in which the computer executes statements in a script. Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.<br>
+                <br>
+                Imagine you cook a meal and you follow a recipe. The receipe will tell you "boil 4 eggs". So before you continue your flow you will loop through this task until all 4 eggs are boiled (of course you are much smarter than a stupid script that follows commands and you boil them in the same pan). If you expect another guest you will adjust all measurements by 1, which is another example (IF condition) where the normal flow can be broken. <br><br>
+                Hopefully you will not be interrupted too much and you can just follow through the recipe from top left to right bottom.
                 </p>
           </div>
 
           <div class="questionBlock">
             <p class="question">What is the DOM</p>
             <p class="answer">The DOM is an inventory of all objects, properties, methods and events of an HTML page.
-            Thanks to this "addressbook" Javascript can get, change, add, or delete specific HTML elements.
+            Thanks to this "addressbook" Javascript can get, change, add, or delete specific HTML elements.<br><br>
             Imagine you need to describe to an electrician which lightbulp in your house needs to be changed. Wouldnt it be great if you had a standardised way to tell him? Like go to livingroom, count all lamps from the left, it's the 3rd one that is damaged, replace it please.
             </p>
           </div>
 
           <div class="questionBlock">
             <p class="question">Accessing data from an array vs. from an object</p>
-            <p class="answer">Explain the difference between accessing data from arrays and objects.
+            <p class="answer">
+              Lets define an array:
+              <br>
+              <br>
+              <span class="code">Var colors = {'white', 'black', 'custom'];</span> 
+              <br>
+              <br>
+              The items within the array are indexed starting with 0. To access the array we use the name of the array (colors) and the position of the item within the array in square brackets []. This looks like this:
+              <br>
+              <br>
+              <span class="code">Var itemThree;
+              <br>
+              ItemThree = colors[2];</span>
+              <br>
+              <br>
+              The value of the variable itemThree would be 'custom'.
+             <br>
+             <br>
+             Let's now define an object:
+             <br>
+             <br>
+             <span class="code">var hotel = {
+            <br>
+            hotel.name ='Quay';
+            <br>
+            hotel.rooms = 40;
+            <br>
+            Hotel.booked = 25;
+            <br>
+            checkAvailability: function() {
+              <br>
+              Return this.rooms - this.booked;
+              <br>
+            }</span>
+            <br>
+            <br>
+            To access any property or method from an object we can use dot notation. At the left side of the dot we call the object and to the right we call the property or the method we want to access:
+            <br>
+            <br>
+            Access / call the property of an object:
+            <br>
+            <span class="code">Var hotelName = hotel.name;<br></span>
+            <br>
+            Access / call the method of an object:
+            <br>
+            <span class="code">Var roomsFree = hotel.checkAvailability();</span><br>
             </p>
           </div>
 
           <div class="questionBlock">
             <p class="question">Functions</p>
-            <p class="answer">Explain what functions are and why they are useful.
+            <p class="answer">
+              Functions let you group a series of instructions together to perform a specific task. Imagine the recipie would need to explain basic cooking processes from scratch like boiling an egg each time this process is required. Instead, all steps required to "boil egg" can be summarised in one function that would look somewhat like this:
+              <br>
+              <br>
+              <span class="code">
+              function <strong>boilEggs</strong> (egg) {<br>
+              put water into pan, <br>
+              put egg into pan, <br>
+              bring to boil, <br>
+              wait 5min, <br>
+              take out<br>
+               shock with cold water<br>
+              }
+            </span>
+            <br>
+            <br>
+            This way of packaging a series of statements is very practical. From now on the recepie could just say: boilEggs and you would know exactly what to do without the recepie having to tell you the exact steps everytime the menu requires you to boil an egg.
             </p>
           </div>
 
