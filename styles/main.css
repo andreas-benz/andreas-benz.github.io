@@ -90,8 +90,19 @@ h2, p {
     margin-bottom: 8px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
 table{
-    
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
     font-size: 16px;
     font-weight: normal;
