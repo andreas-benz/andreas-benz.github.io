@@ -52,13 +52,124 @@
   
       <section class="blog">
         <h1>Problem Solving</h1>
-        <h2>My personal values</h2>
-          <div class="questionBlock">
-            <p class="question">Question</p>
-            <p class="answer">Answer</p>
-          </div>
-      </section>
+        <p class="answer">
+          To be an IT developer means to be a problem solver. The good news is, that it actually doesnt matter too much what kind of problems in life you want to solve. If you follow a structured process you will eventually succeed provided you do not give up in between which is probably the main root cause why many problems remain unsolved. So lets discuss some of the techniques I have used to solve a seemingly easy problem.
+        </p>
 
+        <h2>The Problem</h2>
+        <p class="answer">
+          This problem illustrates how interesting my life is ;-):
+        </p>
+        <p class="callout">
+          Take a random sentence and capitalize the first letter of every word!
+        </p>
+        <p>
+          So provided the following sentence: 
+          <br><strong>Capitalize the first letter of every word!</strong>, 
+          <br>the code should return: 
+          <br><strong>Capitalize The First Letter Of Every Word!</strong>
+        </p>          
+        <p>
+          Sounds simple right?
+        </p>
+          
+        <h2>Problem solving techniques I have used</h2>
+        <ul>
+
+          <li><strong>Understand the problem:</strong> 
+            <br>"If I had an hour to solve a problem I'd spend 55 minutes thinking about the problem and five minutes thinking about solutions" (Einstein)
+            <br>Although, the given problem was seemingly easy to solve at a first glance, having a closer look, there was a lot to be understood about the problem before I even wanted to jump into the exploration of potential solution.
+              <ul>
+                <li>How many words does the sentence have? Answer: infinite. More than one.</li>
+                <li>Are some of the words capitalized already? Answer: Yes, could be.</li>
+                <li>Is the input sentence provided as a string or as an array of words? Answer: String. This one actually took me a while to realise that this is even a relevant question to ask.</li>
+                <li>What is the lenght of the words? Answer: Everything from 1 character to infinite.</li>
+                <li>How are the words seperated? Answer: Spaces " ".</li>
+              </ul>
+            By looking at the test-files, it turned out, that only a few of those questions were relevant to find the right approach to solve the problem but without asking the right questions about the problem I was risking that my solution would not solve the problem fully.
+          </li>
+
+          <br>
+
+          <li><strong>Pseudo code:</strong>
+            <br>I started to write down in simple words what steps might be required to solve the problem. I came up with:
+            <br>// 1. Loop through each word
+            <br>// 2. for each word access the first letter of the Word
+            <br>// 3. turn it into upper Case
+            <br>// 4. done! That's an easy one!
+            <br>
+            <br>Little did I know ;-)
+          </li>
+
+          <br>
+
+          <li><strong>Try something:</strong>
+            <br>I started to try out and experiment with different elements of the solution in isolation:
+              <ol>
+                <li>Create a loop through the sentence using <span class = "code">for</span>-loop</li>
+                <li>Access the first letter of a word using <span class = "code">word(1)</span>.</li>
+                <li>Turn a string or a letter into upperCase using <span class = "code">toUpperCase()</span>.</li>
+                <li>Combine 2. and 3. in one line</li>
+             </ol>
+             I could make all those things happen in isolation but then struggled to put them together.
+          </li>
+
+          <br>
+
+          <li><strong>Reading error messages:</strong>
+            <br>Working through the previous steps, I have encountered all sorts of errors which gave me various hints:
+              <ul>
+                <li>Wrong syntax</li>
+                <li>on which line of code I had to look at resp. where it breaks</li>
+                <li>What my actual output is vs. Expected output</li>
+                <li>Where I have got something right!
+                </li>
+              </ul>
+          </li>
+
+          <br>
+
+          <li><strong>Console.logging</strong>
+            <br>Console logging logs the current output of a function. It helps a lot to understand whether the current step does what it is supposed to do rather than having this big blackbox of nested functions which is impossible to untangle. At least this way we can simulate where things work and where things break.
+          </li>
+
+          <br>
+
+          <li><strong>Googling</strong>
+            <br>Unfortunately none of my attempts so far worked to solve the problem entirely. So I was starting to google some functions that might be helpful. In the student.handbook there was a hint that map() might be useful. I have also realised at this point that some of the methods only work for arrays and others only for strings and that this was an important distinction to make.
+          </li>
+
+          <br>
+
+          <li><strong>Asking coaches / experts for help</strong>
+            <br>Still. I couldnt make it work. So I had a sneek peak at a sample solution. You could consider that as asking an expert who has solved the problem before. That's when I have realised that there are many more methods to be used here in combination:
+            <ul>
+              <li><span class = "code">Split()</span> to make an array out of the string</li>
+              <li><span class = "code">Map()</span> to loop through the elements in the array</li> 
+              <li><span class = "code">toUpperCase()</span> to capitalize the letter</li> 
+              <li><span class = "code">Substr()</span>to retrieve only a part from a string</li> 
+              <li><span class = "code">Join()</span> to make a string out of the elements of an array</li> 
+            </ul>          
+            And then there was still the challenge of getting all those methods working together in the right way, on the right level and parsing the right data in the right format.
+            <br>
+            <br>I eventually got there! Uff!
+          </li>
+        </ul>
+
+        <h2>How I have felt throughout this process</h2>
+        <p class="answer">
+          I have experienced all kinds of emotions. At first I was stoic and focused but pretty soon became angry and frustrated. Why is this simple thing so hard?!Some pauses helped to calm down and think of what else I could do to get closer to the solution. The problem solving process above was a helpful guidance. Then there were, moments of relief when I found out WHY something is not working at least this helped to narrow down the possible solutions and reconfirm that I am not insane. And finally when I got that Woop, Woop message I celebrated myself with a beer. It's so rewarding to finally get something work!
+        </p>
+
+        <h2>What did I learn?</h2>
+        <p class="answer">
+          Heaps! Including:
+          <ul>
+            <li>Trust the process. You will eventually get there.</li>
+            <li>There are methods specific to arrays and others specific to strings and there are methods to turn strings into arrays and vice versa.</li>
+            <li>Methods / functions have a scope within which they work. Assembling and calling them in the right way whith the right data parsed is crucial.</li>
+          </ul>        
+        </p>
       
     </main>
     <footer>
