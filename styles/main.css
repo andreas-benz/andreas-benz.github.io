@@ -237,6 +237,12 @@ h1 {
 
 .question {
     font-weight: bold;
+    margin-top: 40px;
+}
+
+.answer {
+    margin-top: 20px;
+    line-height: 28px;
 }
 
 .callout {
